@@ -1,0 +1,232 @@
+.footer{
+    width:100%;
+    height: auto;
+  
+    
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 999999999;
+
+}
+.footer .sousfooter{
+    width: 80%;
+    height: 200px;
+    border-bottom: 0.5px rgba(255, 255, 255, 0.199) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.footer .sousfooter .d1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.footer .sousfooter .d1 h1{
+    color: #eb9d0c;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.footer .sousfooter .d1 p{
+    color: rgba(207, 206, 206, 0.377);
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: -10px;
+
+}
+.footer .sousfooter .dir{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.footer .sousfooter .dir .butt{
+width: 150px;
+height: 45px;
+border-radius: 5px;
+    border: 1px white solid;
+background-color: transparent;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 1s;
+}
+.footer .sousfooter .dir .butt:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+.footer .sousfooter .dir .butt svg{
+    margin-right: 5px;
+    transition: 1s;
+}
+.footer .sousfooter .dir .butt:hover svg{
+    fill: black !important;
+    transition: 1s;
+}
+.footer .sousfooter .dir h1{
+    color: #eb9d0c;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.footer .sousfooter1{
+    width: 80%;
+    height: 250px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .sousfooter1 .d1{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 180px;
+    
+}
+.footer .sousfooter1 .d2{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 180px;
+}
+.footer .sousfooter1 .d3{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 180px;
+}
+.footer .sousfooter1 .d4{
+    width: 45%;
+   
+    overflow: hidden;
+    height: 180px;
+}
+.footer .sousfooter1  h2{
+    color: #eb9d0c;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.footer .sousfooter1 .d3 p{
+    color: rgba(207, 206, 206, 0.377);
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 1px;
+margin-top: -10px;
+transition: 1s;
+
+}
+.footer .sousfooter1 .d2 p{
+    color: rgba(207, 206, 206, 0.377);
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 1px;
+margin-top: -10px;
+transition: 1s;
+
+}
+.footer .sousfooter1 .d1 p{
+    color: rgba(207, 206, 206, 0.377);
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 1px;
+margin-top: -10px;
+transition: 1s;
+}
+
+.footer .sousfooter1 .d1 p:hover{
+transition: 1s;
+color: #eb9d0c;
+cursor: pointer;
+}
+.footer .sousfooter1 .d2 p:hover{
+    transition: 1s;
+    color: #eb9d0c;
+    cursor: pointer;
+    }
+    .footer .sousfooter1 .d3 p:hover{
+        transition: 1s;
+        color: #eb9d0c;
+        cursor: pointer;
+        }
+.footer .sousfooter1 .d4 p{
+    color: rgba(207, 206, 206, 0.377);
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 1px;
+margin-top: -10px;
+}
+.footer .sousfooter1 .d4 input{
+width: 100%;
+height: 60px;
+border: none;
+background-color: transparent;
+border-bottom: 1px solid #eb9d0c ;
+outline: none;
+color: white;
+}
+.footer .sousfooter1 .d4 button{
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    margin-top: -55px;
+    margin-left: 365px;
+    border-radius: 5px;
+transition: 1s
+    }
+    .footer .sousfooter1 .d4 button:hover{
+        background-color: white;
+color: black;      
+transition: 1s;
+        }
+        .footer .sousfooter2{
+            width: 80%;
+            height: 60px;
+            margin-bottom:20px ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .footer .sousfooter2 p{
+    color: rgba(207, 206, 206, 0.377);
+
+        }
+        .footer .sousfooter2 .social{
+            width: 150px;
+            height: 100%;
+            
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            transition: 1s;
+
+        }
+        .footer .sousfooter2 .social svg:hover{
+            fill: #eb9d0c;
+            transition: 1s;
+            cursor: pointer;
+        }

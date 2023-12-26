@@ -1,0 +1,152 @@
+ .card{
+    width: 255px;
+    height: 250px;
+    background-color: white;
+    margin-top: 6px;
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+  
+  }
+   .card .d0{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   .card .d0 svg{
+    margin-right: 15px;
+    transition: 0.5s;
+  
+  }
+   .card .d0 svg:hover{
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+   .card .d1{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+   .card .d1 img{
+    width: 200px;
+  }
+   .card .d2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card .d2 .pr1{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card .d2 .pr1 span{
+    margin-left:10px ;
+  }
+  .card .d2 .pr1 .qt{
+    width: 50px;
+    margin-left: 10px;
+    height: 30px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+  }
+  .card .d2 .pr1 .qt .qt1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .d2 .pr1 .qt .qt2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card .d2 .pr1 .qt .qt2 .div{
+    width: 99%;
+    height:48%;
+    border: 0.5px rgba(0, 0, 0, 0.068) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+  }
+  .card .d2 .pr1 .qt .qt2 .div1{
+    width: 99%;
+    height:48%;
+    border: 0.5px rgba(0, 0, 0, 0.068) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    background-color: white;
+    transition: 1s;
+
+  }
+  .card .d2 .pr1 .qt .qt2 .div1 svg{
+fill: rgb(165, 164, 164);
+transition: 1s;
+  }
+  .card .d2 .pr1 .qt .qt2 .div:hover{
+    background-color: #ebaf0c;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .card .d2 .pr2{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card .d2 .pr2 span{
+  
+    margin-right: 10px;
+    
+  }
+   .card p{
+    margin-left: 15px;
+  }
+   .card .d2 .p{
+    margin-left: 15px;
+    font-size: 17px;
+    color: rgb(170, 170, 170);
+    font-weight: 200 !important;
+  }
+   .card .d2 p span{
+    margin-right: 5px;
+  }
+   .card .d2 button{
+    background-color: #ebaf0c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border:none;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+   .card .d2 button:hover{
+    background-color: rgb(58, 58, 58);
+    transition: 1s;
+  }
