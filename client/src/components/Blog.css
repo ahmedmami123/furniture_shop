@@ -17,11 +17,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+     background-image: url("../../public/cov.jpg");
+background-position: center;
+background-size: cover;
 }
 
 .blog .sousblog1 img {
   width: 100%;
   margin-top: -300px;
+
 }
 
 .blog .sousblog1 .trablack {
@@ -134,9 +138,11 @@ font-weight: 500;
   display: flex;
   justify-content: center;
   position: fixed;
-  top: -200px;
+  /* top: -200px; */
 z-index: -1;
 }
 .blog .souhome img{
   width: 100%;
+ 
+
 }
