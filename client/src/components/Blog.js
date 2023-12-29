@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { useSelector } from "react-redux";
 import { useLocation, useNavigationType } from "react-router-dom";
 import BlogCard from "../cards/BlogCard";
+import BlogNewsCard from "../cards/BlogNewsCard";
 
 function Blog({ setnav, setpp, ping, setPing }) {
   //   const [activeSlide, setActiveSlide] = useState(0);
@@ -26,8 +27,12 @@ function Blog({ setnav, setpp, ping, setPing }) {
   }, [location]);
   return (
     <div className="blog">
-      <div className="sousblog1">
-        <img src="https://c4.wallpaperflare.com/wallpaper/975/377/178/the-white-room-wallpaper-preview.jpg" />
+      <div className="souhome">
+        <img src="cov.jpg" />
+      </div>
+      <div className="sousblog1"> 
+          {/* <img src="cov.jpg" /> */}
+        {/* <img src="https://c4.wallpaperflare.com/wallpaper/975/377/178/the-white-room-wallpaper-preview.jpg" /> */}
         <div className="trablack">
           <div className="blog-soustiltle">
             <h1>blog</h1>
@@ -47,12 +52,29 @@ function Blog({ setnav, setpp, ping, setPing }) {
           </div>
         </div>
       </div>
+
       <div className="blog-alldiv">
         <div className="blog-title">
           <h2>INTERIOR TIPS & IDEAS</h2>
           <p>First Things First, Find Out What You Like</p>
         </div>
         <BlogCard />
+      </div>
+      <div className="divtr">
+        <h1>Our Story</h1>
+        <p>
+          we believe in creativity as one of the major forces of progress. with
+          we traveled throughout tunisia to find exceptional artisans and bring
+          their unique handcrafted objects to connoisseurs everywhere
+        </p>
+        <button className="btn">Read Full Story</button>
+      </div>
+      <div className="blog-alldiv">
+        <div className="blog-title">
+          <h2>CREATING THE PERFECT GALLERY WALL</h2>
+          <p>Your Color Pallete Can Come From A Variety Of Inspiration</p>
+        </div>
+        <BlogNewsCard />
       </div>
       <Footer />
     </div>

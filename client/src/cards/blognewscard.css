@@ -1,0 +1,87 @@
+
+.d22{
+    width:80%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  
+ .d22 .cardblog1{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+overflow: hidden;
+  }
+ .d22 .cardblog1:hover{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    transition: 0.5s;
+  
+  }
+ .d22 .cardblog1 .imgblog1{
+width: 100%;
+height: 220px !important;
+
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+  }
+ .d22 .cardblog1 .imgblog1 img{
+height: 110%;
+  }
+ .d22 .cardblog1 .descri{
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+ .d22 .cardblog1 .descri h2{
+    width: 90%;
+    text-align: left;
+    font-weight: 400;
+  }
+
+     .d22 .cardblog1 .divbtn{
+        width:300px !important;
+        height: 45px ;
+        background-color:transparent;
+        margin-top: 5px;
+        position: absolute;
+        margin-top: 295px;
+        border: none;
+        border-radius: 7.5px;
+    overflow: hidden;
+    color: transparent;
+          }
+  .d22 :hover .divbtn{
+            width:330px !important;
+            height: 45px ;
+            background-color: #ebaf0c;
+            margin-top: 5px;
+            position: absolute;
+            margin-top: 295px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          font-weight: 500;
+          transition: 0.5s;
+          transition-delay: 0.5s;
+          cursor: pointer;
+          
+              }
