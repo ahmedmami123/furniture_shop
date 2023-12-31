@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Tajawal:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Tajawal:wght@200&display=swap");
 .home {
   margin-top: -50px;
   width: 100%;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.home .souhome{
+.home .souhome {
   width: 100%;
   height: 850px;
   background-color: #ebaf0c;
@@ -17,76 +17,71 @@
   display: flex;
   justify-content: center;
   position: fixed;
-
 }
-.home .souhome img{
+.home .souhome img {
   width: 100%;
 }
-.home .div1{
+.home .div1 {
   width: 100%;
   height: 670px;
-  
+  background-color: white;
   z-index: 9999999;
   overflow: hidden;
 }
-.home .div1 .img{
+.home .div1 .img {
   width: 105%;
   margin-top: -10px;
   filter: blur(2px);
   margin-left: -10px;
 }
-.home .div1 .d1{
+.home .div1 .d1 {
   top: 0;
   width: 100%;
   height: 450px;
-  
+
   position: absolute;
   z-index: 99999999;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-
 }
-.home .div1 h1{
+.home .div1 h1 {
   margin-left: 50px;
   color: white;
   letter-spacing: 2px;
   font-size: 48px;
 }
-.home .div1 p{
-  
+.home .div1 p {
   margin-left: 50px;
   color: white;
   letter-spacing: 2px;
   font-size: 20px;
   margin-top: -20px;
 }
-.home .div1 .button{
+.home .div1 .button {
   width: 170px;
   height: 50px;
   margin-left: 50px;
   border-radius: 5px;
   border: none;
-  background-color:#ebaf0c;
+  background-color: #ebaf0c;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: 600;
 }
-.home .div1 .button:hover{
+.home .div1 .button:hover {
   background-color: rgb(71, 71, 71);
   transition: 1s;
   cursor: pointer;
 }
-.home .div1 .button svg{
+.home .div1 .button svg {
   margin-right: 5px;
-
 }
 
-.home .div1 .d2{
+.home .div1 .d2 {
   width: 100%;
   height: 200px;
   position: absolute;
@@ -95,45 +90,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
-.home .div1 .d2 img{
+.home .div1 .d2 img {
   width: 50px;
 
   margin-top: 50px;
 }
-.bb{
+.bb {
   margin-left: 20px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 70px !important;
-  
 }
 
-.bb .imgc{
+.bb .imgc {
   width: 80px !important;
 }
 
-.bb:hover .imgc{
+.bb:hover .imgc {
   width: 100px !important;
   transition: 1s;
   cursor: pointer;
 }
-.bb p{
+.bb p {
   margin-top: -95px !important;
   margin-left: 0px !important;
-font-size: 15px !important;
-width: 150px;
-text-align: center;
+  font-size: 15px !important;
+  width: 150px;
+  text-align: center;
 }
-.i{
-  width: 150px !important; 
+.i {
+  width: 150px !important;
 }
-.home .div2{
+.home .div2 {
   width: 100%;
   height: auto;
   background-color: rgb(241, 238, 238);
@@ -142,18 +134,16 @@ text-align: center;
   align-items: center;
   justify-content: center;
   z-index: 9999999;
-
 }
-.home .div2 h1{
+.home .div2 h1 {
   color: #3a3d45;
   font-weight: 450;
 }
-.home .div2 p{
+.home .div2 p {
   color: #8f8f8f;
   margin-top: -20px;
-
 }
-.home .div2 .button{
+.home .div2 .button {
   background-color: #ebaf0c;
   border: none;
   width: 110px;
@@ -161,62 +151,58 @@ text-align: center;
   margin-bottom: 40px;
   border-radius: 5px;
   color: white;
-transition: 1s;
-
+  transition: 1s;
 }
-.home .div2 .button:hover{
+.home .div2 .button:hover {
   background-color: #3a3d45;
   transition: 1s;
   cursor: pointer;
 }
-.home .div2 .d1{
+.home .div2 .d1 {
   width: 80.5%;
-  height: auto;  
+  height: auto;
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.home .div2 .d1 .card1c{
+.home .div2 .d1 .card1c {
   width: 380px;
   height: 280px;
   background-color: white;
   overflow: hidden;
   margin-bottom: 40px;
 }
-.home .div2 .d1 .card1c h2{
+.home .div2 .d1 .card1c h2 {
   position: absolute;
   margin-left: 20px;
   color: #3a3d45;
 }
-.home .div2 .d1 .card1c p{
+.home .div2 .d1 .card1c p {
   position: absolute;
   margin-left: 20px;
   color: #a7a7a7;
   margin-top: 55px;
 }
 
-.home .div2 .d1 .card1c .img{
-width: 380px;
-height: 180PX;
-position: absolute;
-margin-left:0px ;
-margin-top: 80PX;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.home .div2 .d1 .card1c .img img{
-  width: 320px;
-
-  
+.home .div2 .d1 .card1c .img {
+  width: 380px;
+  height: 180px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
-.home .div2 .d1 .card1c .cub{
+}
+.home .div2 .d1 .card1c .img img {
+  width: 320px;
 
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .div2 .d1 .card1c .cub {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -226,21 +212,19 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
-.home .div2 .d1 .card1c .cub .circl{
-  background-color:#8f8f8f;
+.home .div2 .d1 .card1c .cub .circl {
+  background-color: #8f8f8f;
 
   width: 0;
   height: 0;
-border-radius: 50%;
-transition: 0.5s;
-overflow: hidden;
+  border-radius: 50%;
+  transition: 0.5s;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.home .div2 .d1 .card1c .cub1{
-
-
+.home .div2 .d1 .card1c .cub1 {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -250,60 +234,59 @@ overflow: hidden;
   justify-content: center;
   align-items: center;
 }
-.home .div2 .d1 .card1c .cub1 .circl{
-  background-color:#8f8f8f;
+.home .div2 .d1 .card1c .cub1 .circl {
+  background-color: #8f8f8f;
 
   width: 0;
   height: 0;
-border-radius: 50%;
-transition: 0.5s;
-overflow: hidden;
+  border-radius: 50%;
+  transition: 0.5s;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.home .div2 .d1 .card1c .cub .circl:hover{
-  background-color:#3a3d45 !important;
+.home .div2 .d1 .card1c .cub .circl:hover {
+  background-color: #3a3d45 !important;
   cursor: pointer;
 }
-.home .div2 .d1 .card1c:hover .cub .circl{
-  background-color:#8f8f8f;
-cursor: pointer;
+.home .div2 .d1 .card1c:hover .cub .circl {
+  background-color: #8f8f8f;
+  cursor: pointer;
   width: 35px;
   height: 35px;
-border-radius: 50%;
-transition: 0.5s;
+  border-radius: 50%;
+  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.home .div2 .d1 .card1c .cub1 .circl:hover{
-  background-color:#3a3d45 !important;
+.home .div2 .d1 .card1c .cub1 .circl:hover {
+  background-color: #3a3d45 !important;
   cursor: pointer;
 }
-.home .div2 .d1 .card1c:hover .cub1 .circl{
-  background-color:#8f8f8f;
-cursor: pointer;
+.home .div2 .d1 .card1c:hover .cub1 .circl {
+  background-color: #8f8f8f;
+  cursor: pointer;
   width: 35px;
   height: 35px;
-border-radius: 50%;
-transition: 0.5s;
+  border-radius: 50%;
+  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.home .div2 .d1 .card1c .addtocard{
-
-background-color:#ebaf0c;
+.home .div2 .d1 .card1c .addtocard {
+  background-color: #ebaf0c;
   width: 140px;
   height: 140px;
-  position:relative;
+  position: relative;
   /* margin-left: 360px;
   margin-top: 230px; */
   margin-left: 370px;
-    margin-top: 270px;
+  margin-top: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,57 +294,53 @@ background-color:#ebaf0c;
   display: flex;
   justify-content: flex-start;
   transition: 0.5s;
-  
 }
-.home .div2 .d1 .card1c .addtocard:hover{
+.home .div2 .d1 .card1c .addtocard:hover {
   background-color: #3a3d45 !important;
   cursor: pointer;
 }
-.home .div2 .d1 .card1c .addtocard svg{
-  
+.home .div2 .d1 .card1c .addtocard svg {
   rotate: 315deg;
   margin-left: 10px;
-  margin-top: -15px
-
+  margin-top: -15px;
 }
-.home .div2 .d1 .card1c:hover .addtocard{
-cursor: pointer;
-  background-color:#ebaf0c;
-    width: 140px;
-    height: 140px;
-    position:relative;
-    margin-left: 310px;
-    margin-top: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    rotate: 45deg;
-    display: flex;
-    justify-content: flex-start;
-    transition: 0.5s;
-  
-  }
-.home  .div2 .d2{
-  width:80%;
+.home .div2 .d1 .card1c:hover .addtocard {
+  cursor: pointer;
+  background-color: #ebaf0c;
+  width: 140px;
+  height: 140px;
+  position: relative;
+  margin-left: 310px;
+  margin-top: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 45deg;
+  display: flex;
+  justify-content: flex-start;
+  transition: 0.5s;
+}
+.home .div2 .d2 {
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.home .div2 .d2 .cardblog{
+.home .div2 .d2 .cardblog {
   width: 320px;
   height: 400px;
   background-color: white;
-transition: 1s;
-margin-top: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
+  transition: 1s;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-overflow: hidden;
+  overflow: hidden;
 }
-.home .div2 .d2 .cardblog .souscardb{
+.home .div2 .d2 .cardblog .souscardb {
   width: 320px;
   height: 400px;
   background-color: rgba(0, 0, 0, 0.274);
@@ -372,85 +351,84 @@ overflow: hidden;
   justify-content: flex-start;
   z-index: 9999;
 }
-.home .div2 .d2 .cardblog .souscardb h3{
-color: white;
+.home .div2 .d2 .cardblog .souscardb h3 {
+  color: white;
 
-font-size: 25px;
-font-weight: 400;
-margin-left: 10px;
-width: 90%;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 10px;
+  width: 90%;
 }
-.home .div2 .d2 .cardblog .souscardb p{
+.home .div2 .d2 .cardblog .souscardb p {
   color: white;
 
   font-size: 17px;
- width: 90%;
- text-align: justify;
- margin-top: 40px;
- color: transparent;
- letter-spacing: 1px;
-
-  }
-  .home .div2 .d2 .cardblog .souscardb:hover p{
-    color: white;
+  width: 90%;
+  text-align: justify;
+  margin-top: 40px;
+  color: transparent;
+  letter-spacing: 1px;
+}
+.home .div2 .d2 .cardblog .souscardb:hover p {
+  color: white;
   transition: 1s;
-    font-size: 17px;
-   width: 90%;
-   text-align: justify;
-   margin-top: 0px;
-   color:white;
-   cursor: pointer;
-    }
-.home .div2 .d2 .cardblog .blogimg{
-object-fit: cover;
-  
+  font-size: 17px;
+  width: 90%;
+  text-align: justify;
+  margin-top: 0px;
+  color: white;
+  cursor: pointer;
+}
+.home .div2 .d2 .cardblog .blogimg {
+  object-fit: cover;
+
   height: 100%;
 }
-.home .div2 .d2 .cardblog:hover{
-margin-top: 20px;
-transition: 1s;
-cursor: pointer;
+.home .div2 .d2 .cardblog:hover {
+  margin-top: 20px;
+  transition: 1s;
+  cursor: pointer;
 }
-.home .div2 .d2 .cardblog .btnn1{
+.home .div2 .d2 .cardblog .btnn1 {
   width: 0px !important;
   height: 45px !important;
   background-color: #ebaf0c;
-position: absolute;
-margin-left: 175px;
-margin-top: 400px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-overflow: hidden;
-z-index: 9999999999;
-cursor: pointer;
+  position: absolute;
+  margin-left: 175px;
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  z-index: 9999999999;
+  cursor: pointer;
 }
-.home .div2 .d2 .cardblog:hover .btnn1{
+.home .div2 .d2 .cardblog:hover .btnn1 {
   width: 300px !important;
   background-color: #ebaf0c;
-position: absolute;
-margin-left: 0px;
-margin-top: 400px;
-cursor: pointer;
-transition-delay: 0.5s;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 400px;
+  cursor: pointer;
+  transition-delay: 0.5s;
 }
-.home .div2 .btn{
+.home .div2 .btn {
   width: 110px;
-height: 50px;
-border-radius: 5px;
-background-color: #ebaf0c;
-border: none;
-color: white;
-transition: 1s;
-margin-bottom: 40px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ebaf0c;
+  border: none;
+  color: white;
+  transition: 1s;
+  margin-bottom: 40px;
 }
-.home .div2 .btn:hover{
-background-color: #3a3d45;
-transition: 1.5s;
-cursor: pointer;
+.home .div2 .btn:hover {
+  background-color: #3a3d45;
+  transition: 1.5s;
+  cursor: pointer;
 }
-.home .divtr{
+.home .divtr {
   width: 100%;
   height: 500px;
   background-color: rgba(0, 0, 0, 0.404);
@@ -459,14 +437,13 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   z-index: 9999999;
-
 }
-.home .divtr h1{
-color: white;
-font-size: 35px;
-font-weight: 500;
+.home .divtr h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
 }
-.home .divtr p{
+.home .divtr p {
   color: white;
   font-size: 15px;
   width: 60%;
@@ -474,84 +451,80 @@ font-weight: 500;
   letter-spacing: 1px;
   font-weight: 200;
   margin-top: -10px;
-  }
-  .home .divtr .btn{
-    width: 120px;
-    height: 45px;
-    color: white;
-    background-color: transparent;
-    border: 1px white solid;
-    margin-top: 5px;
-    border-radius: 5px;
-    font-weight: 400;
-    transition: 1s;
-  }
-  .home .divtr .btn:hover{
-    background-color: white;
-    color:black;
-    transition: 1s;
-    cursor: pointer;
-  }
+}
+.home .divtr .btn {
+  width: 120px;
+  height: 45px;
+  color: white;
+  background-color: transparent;
+  border: 1px white solid;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  transition: 1s;
+}
+.home .divtr .btn:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+  cursor: pointer;
+}
 
-              .home .div5{
-                width:100%;
-                height: auto;
-              
-                
-                background-color: #3a3d45;
-                display: flex;
-                flex-direction: column;
-                z-index: 999999999;
-              }
-              .home .div5 .dr{
-                width: 100%;
-                height: 150px;
-                background-color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-              .home .div5 .dr SVG{
-                margin-left: 7px;
-                margin-right: 7px;
-                margin-top: -20px;
-                
-              }
-              .home .div5 .dr h1{
-              font-weight: 400;
-                color: #3a3d45;
-                
-              }
-              .home .div5 .dr p{
-                font-weight: 400;
-                  color: #737475;
-                  position: absolute;
-                  margin-top: 90px;
-                  font-size: 18px;
-                  
-                }
-              .home .div5 .dr1{
-                width: 100%;
-                height:auto;
-                background-color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-              .home .div5 .dr1 .image{
-                width: 16.66%;
-                height: 200px;
-                background-color: red;
-                overflow: hidden;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-              .home .div5 .dr1 .image img{
-                width: 110%;
-                transition: 0.5s;
-              }
-              .home .div5 .dr1 .image img:hover{
-                width: 100%;
-                transition: 0.5s;
-              }
+.home .div5 {
+  width: 100%;
+  height: auto;
+
+  background-color: #3a3d45;
+  display: flex;
+  flex-direction: column;
+  z-index: 999999999;
+}
+.home .div5 .dr {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .div5 .dr SVG {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: -20px;
+}
+.home .div5 .dr h1 {
+  font-weight: 400;
+  color: #3a3d45;
+}
+.home .div5 .dr p {
+  font-weight: 400;
+  color: #737475;
+  position: absolute;
+  margin-top: 90px;
+  font-size: 18px;
+}
+.home .div5 .dr1 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .div5 .dr1 .image {
+  width: 16.66%;
+  height: 200px;
+  background-color: red;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .div5 .dr1 .image img {
+  width: 110%;
+  transition: 0.5s;
+}
+.home .div5 .dr1 .image img:hover {
+  width: 100%;
+  transition: 0.5s;
+}

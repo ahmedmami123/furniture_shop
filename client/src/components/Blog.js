@@ -30,9 +30,9 @@ function Blog({ setnav, setpp, ping, setPing }) {
       <div className="souhome">
         <img src="cov.jpg" />
       </div>
-      <div className="sousblog1"> 
-          {/* <img src="cov.jpg" /> */}
-        {/* <img src="https://c4.wallpaperflare.com/wallpaper/975/377/178/the-white-room-wallpaper-preview.jpg" /> */}
+      <div className="sousblog1">
+        {/* <img src="cov.jpg" /> */}
+        <img src="https://images8.alphacoders.com/126/1262109.jpg" />
         <div className="trablack">
           <div className="blog-soustiltle">
             <h1>blog</h1>
