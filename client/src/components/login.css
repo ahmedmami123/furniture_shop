@@ -144,7 +144,7 @@
   margin-top: 75px;
   width: 530px;
   background-color: white;
-  height: 200px;
+  height: 340px;
   display: flex;
   margin-bottom: 75px;
   transition: 1s;
@@ -157,7 +157,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 1s;
+  transition: 2s;
+  z-index: 2000;
+  background-color: white;
 }
 .Login_Register .all_content2 .pos {
   margin-top: 500px;
@@ -178,11 +180,14 @@
 }
 .Login_Register .all_content2 .register .titre button {
   background-color: #eb9d0c;
-  width: 65px;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 23px;
   border-radius: 2px;
   border: none;
   color: white;
+
   transition: 1s;
 }
 .Login_Register .all_content2 .register .titre button:hover {
@@ -331,7 +336,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 1s;
+  transition: 2s;
+  z-index: 2000;
+  background-color: white;
 }
 
 .Login_Register .all_content .register .titre {
@@ -348,7 +355,8 @@
 }
 .Login_Register .all_content .register .titre button {
   background-color: #eb9d0c;
-  width: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 23px;
   border-radius: 2px;
   border: none;
@@ -412,6 +420,79 @@
   transition: 1s;
 }
 .Login_Register .all_content .register .button:hover {
+  background-color: rgb(57, 51, 51);
+  transition: 1s;
+}
+.all_content {
+  position: relative;
+}
+.all_content2 {
+  position: relative;
+}
+.login {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.titre {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-between;
+  font-weight: 600;
+  color: gray;
+  align-items: center;
+  border-bottom: 1px solid rgb(241, 238, 238);
+  padding: 5px 0;
+}
+.login .titre button {
+  background-color: #eb9d0c;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  height: 23px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  transition: 1s;
+}
+.login .titre button:hover {
+  background-color: rgb(57, 51, 51);
+}
+.login .form {
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid rgb(215, 214, 214);
+  padding: 25px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.login .form input {
+  width: 94%;
+  height: 43px;
+  padding-left: 5%;
+  border: 1px solid rgb(215, 214, 214) !important;
+  outline: none;
+  margin-bottom: 20px;
+}
+.login .button {
+  width: 90%;
+  height: 50px;
+  margin: 25px 0;
+  background-color: #eb9d0c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 300;
+  transition: 1s;
+}
+.login .button:hover {
   background-color: rgb(57, 51, 51);
   transition: 1s;
 }

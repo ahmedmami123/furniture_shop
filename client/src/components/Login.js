@@ -324,10 +324,34 @@ function Login({ setnav, setpp }) {
           </div>
           <div className="form">
             {" "}
-            <input type="text" placeholder="First name:*"></input>
-            <input type="text" placeholder="Last name:*"></input>
-            <input type="email" placeholder="Email:*"></input>
-            <input type="password" placeholder="Password:*"></input>
+            <input
+              type="text"
+              placeholder="First name:*"
+              onChange={(e) =>
+                setRegister({ ...register, name: e.target.value })
+              }
+            ></input>
+            <input
+              type="text"
+              placeholder="Last name:*"
+              onChange={(e) =>
+                setRegister({ ...register, Lastname: e.target.value })
+              }
+            ></input>
+            <input
+              type="email"
+              placeholder="Email:*"
+              onChange={(e) =>
+                setRegister({ ...register, email: e.target.value })
+              }
+            ></input>
+            <input
+              type="password"
+              placeholder="Password:*"
+              onChange={(e) =>
+                setRegister({ ...register, password: e.target.value })
+              }
+            ></input>
           </div>
           <div className="term">
             <div className="radio">
@@ -343,7 +367,50 @@ function Login({ setnav, setpp }) {
               </p>
             </div>
           </div>
-          <button className="button">Create account</button>
+          <button
+            className="button"
+            onClick={() => {
+              dispatch(userRegister(register));
+              setTimeout(() => {
+                navigate("/");
+              }, 2000);
+            }}
+          >
+            Create account
+          </button>
+        </div>
+        <div className="login">
+          <div className="titre">
+            <p>SIGN IN</p>
+            <button onClick={() => setvalidat(!validat)}>
+              CREATE AN ACCOUNT
+            </button>
+          </div>
+          <div className="form">
+            {" "}
+            <input
+              type="email"
+              placeholder="Email:*"
+              onChange={(e) => setLogin({ ...login, email: e.target.value })}
+            ></input>
+            <input
+              type="password"
+              placeholder="Password:*"
+              onChange={(e) => setLogin({ ...login, password: e.target.value })}
+            ></input>
+          </div>
+
+          <button
+            className="button"
+            onClick={() => {
+              dispatch(userLogin(login));
+              setTimeout(() => {
+                navigate("/");
+              }, 1000);
+            }}
+          >
+            Login
+          </button>
         </div>
       </div>
       <Footer />
