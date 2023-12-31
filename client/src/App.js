@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link, Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import Login from "./components/Login";
-import Register from "./components/Register";
 import { useDispatch } from "react-redux";
 import { getuser, logout, userCurrent } from "./redux/userSlice/userSlice";
 import Profile from "./components/Profile";
@@ -74,11 +73,7 @@ function App() {
             />
           }
         />
-        <Route
-          exact
-          path="/register"
-          element={<Register setnav={setnav} setpp={setpp} />}
-        />
+
         <Route
           path="/login"
           element={<Login setnav={setnav} setpp={setpp} />}

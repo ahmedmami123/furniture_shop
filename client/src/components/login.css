@@ -1,0 +1,417 @@
+/* importtion  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.Login_Register {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(241, 238, 238);
+  font-family: "Montserrat", sans-serif;
+}
+
+.Login_Register .ImageCoverContent {
+  width: 100%;
+  height: 350px;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.Login_Register .ImageCoverContent img {
+  width: 100%;
+  margin-top: -90px;
+}
+
+.Login_Register .ImageCoverContent .trablack {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.422);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Login_Register-soustiltle {
+  width: 87%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Login_Register .ImageCoverContent .trablack h1 {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 0px;
+}
+
+.Login_Register .ImageCoverContent .trablack p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.Login_Register .ImageCoverContent .trablack p span {
+  color: #eb9d0c;
+}
+.Login_Register .ImageCoverContent .trablack p span {
+  color: #eb9d0c;
+}
+
+.Login_Register.blog-alldiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: rgb(241, 238, 238);
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login_Register.blog-title {
+  width: 87%;
+  display: flex;
+  justify-content: center;
+}
+
+.Login_Register .blog-title h2 {
+  margin: 0px 0px 10px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Login_Register.blog-title p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(128, 128, 128, 0.729);
+  margin: 0px 0px 10px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+/* blog story  */
+.divtr {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.404);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+}
+.divtr h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+}
+.divtr p {
+  color: white;
+  font-size: 15px;
+  width: 60%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-top: -10px;
+}
+.divtr .btn {
+  width: 120px;
+  height: 45px;
+  color: white;
+  background-color: transparent;
+  border: 1px white solid;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  transition: 1s;
+}
+.divtr .btn:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.Login_Register .all_content2 {
+  margin-top: 75px;
+  width: 530px;
+  background-color: white;
+  height: 200px;
+  display: flex;
+  margin-bottom: 75px;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.Login_Register .all_content2 .register {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+.Login_Register .all_content2 .pos {
+  margin-top: 500px;
+  transition: 1s;
+}
+
+.Login_Register .all_content2 .register .titre {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-between;
+  font-weight: 600;
+  color: gray;
+  align-items: center;
+  border-bottom: 1px solid rgb(241, 238, 238);
+  padding: 5px 0;
+}
+.Login_Register .all_content2 .register .titre button {
+  background-color: #eb9d0c;
+  width: 65px;
+  height: 23px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  transition: 1s;
+}
+.Login_Register .all_content2 .register .titre button:hover {
+  background-color: rgb(57, 51, 51);
+}
+.Login_Register .all_content2 .register .form {
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid rgb(215, 214, 214);
+  padding: 25px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.Login_Register .all_content2 .register .form input {
+  width: 94%;
+  height: 43px;
+  padding-left: 5%;
+  border: 1px solid rgb(215, 214, 214) !important;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.Login_Register .all_content2 .register .term {
+  width: 90%;
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(215, 214, 214);
+}
+.Login_Register .all_content2 .register .term .radio {
+  width: 10%;
+
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Login_Register .all_content2 .register .term .text {
+  width: auto;
+  padding-left: 10px;
+  height: 100px;
+  font-size: 17px;
+  color: rgb(162, 160, 160);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.rad-label {
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background-color: transparent;
+}
+
+.rad-input {
+  position: absolute;
+  left: 0;
+
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+
+  background: linear-gradient(to right bottom, #fade42, #eb9d0c);
+  position: relative;
+}
+
+.rad-design::before {
+  content: "";
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.rad-input:checked + .rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  color: hsl(0, 0%, 60%);
+  margin-left: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+
+  transition: 0.3s;
+}
+
+.rad-input:checked ~ .rad-text {
+  color: hsl(0, 0%, 40%);
+}
+
+.Login_Register .all_content2 .register .button {
+  width: 90%;
+  height: 50px;
+  margin: 25px 0;
+  background-color: #eb9d0c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 300;
+  transition: 1s;
+}
+.Login_Register .all_content2 .register .button:hover {
+  background-color: rgb(57, 51, 51);
+  transition: 1s;
+}
+
+.Login_Register .all_content {
+  margin-top: 75px;
+  width: 530px;
+  background-color: white;
+  height: 600px;
+  display: flex;
+  margin-bottom: 75px;
+  transition: 1s;
+}
+
+.Login_Register .all_content .register {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.Login_Register .all_content .register .titre {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-between;
+  font-weight: 600;
+  color: gray;
+  align-items: center;
+  border-bottom: 1px solid rgb(241, 238, 238);
+  padding: 5px 0;
+}
+.Login_Register .all_content .register .titre button {
+  background-color: #eb9d0c;
+  width: 65px;
+  height: 23px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  transition: 1s;
+}
+.Login_Register .all_content .register .titre button:hover {
+  background-color: rgb(57, 51, 51);
+}
+.Login_Register .all_content .register .form {
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid rgb(215, 214, 214);
+  padding: 25px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.Login_Register .all_content .register .form input {
+  width: 94%;
+  height: 43px;
+  padding-left: 5%;
+  border: 1px solid rgb(215, 214, 214) !important;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.Login_Register .all_content .register .term {
+  width: 90%;
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(215, 214, 214);
+}
+.Login_Register .all_content .register .term .radio {
+  width: 10%;
+
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Login_Register .all_content .register .term .text {
+  width: auto;
+  padding-left: 10px;
+  height: 100px;
+  font-size: 17px;
+  color: rgb(162, 160, 160);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Login_Register .all_content .register .button {
+  width: 90%;
+  height: 50px;
+  margin: 25px 0;
+  background-color: #eb9d0c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 300;
+  transition: 1s;
+}
+.Login_Register .all_content .register .button:hover {
+  background-color: rgb(57, 51, 51);
+  transition: 1s;
+}

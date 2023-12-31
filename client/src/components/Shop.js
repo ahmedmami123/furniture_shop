@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import { useSelector } from "react-redux";
 import { useLocation, useNavigationType } from "react-router-dom";
 
-function Shop({ setnav, setpp ,ping,setPing}) {
+function Shop({ setnav, setpp, ping, setPing }) {
   const [furniture, setfurniture] = useState([
     {
       posterurl: "sofa11.png",
@@ -51,24 +51,23 @@ function Shop({ setnav, setpp ,ping,setPing}) {
     },
   ]);
   const [activeSlide, setActiveSlide] = useState(0);
-const [showprice, setshowprice] = useState(true);
-const [showtype, setshowtype] = useState(true);
-const shop = useSelector((state) => state?.shop?.shopp);
-useEffect(() => {
-  setnav("");
-  setpp("");
-
-}, []);
-const location = useLocation();
-const navType = useNavigationType();
-useEffect(() => {
-  if (navType !== "POP") {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-}, [location]);
+  const [showprice, setshowprice] = useState(true);
+  const [showtype, setshowtype] = useState(true);
+  const shop = useSelector((state) => state?.shop?.shopp);
+  useEffect(() => {
+    setnav("");
+    setpp("");
+  }, []);
+  const location = useLocation();
+  const navType = useNavigationType();
+  useEffect(() => {
+    if (navType !== "POP") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [location]);
   return (
     <div className="shop">
       <div className="sousshop1">
@@ -223,46 +222,66 @@ useEffect(() => {
                 <div className="sousprice1">
                   <p>Price</p>
                   <main>
-                  <svg className={showprice? "svg" : "svg1"} onClick={()=>setshowprice(!showprice)} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-</svg></main>
+                    <svg
+                      className={showprice ? "svg" : "svg1"}
+                      onClick={() => setshowprice(!showprice)}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-chevron-up"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                      />
+                    </svg>
+                  </main>
                 </div>
-                <div  className={showprice? "sousprice2" : "sousprice22"}>
-       
-       
-              
-          
-                </div>
+                <div className={showprice ? "sousprice2" : "sousprice22"}></div>
               </div>
               <div className="type">
                 <div className="soustype1">
                   <p>Type</p>
                   <main>
-                  <svg className={showtype? "svg" : "svg1"} onClick={()=>setshowtype(!showtype)} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-</svg></main>
+                    <svg
+                      className={showtype ? "svg" : "svg1"}
+                      onClick={() => setshowtype(!showtype)}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-chevron-up"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                      />
+                    </svg>
+                  </main>
                 </div>
-                <div  className={showtype? "soustype2" : "soustype22"}>
-                <div className="dd"><label class="rad-label">
-    <input type="radio" class="rad-input" name="rad"/>
-    <div class="rad-design"></div>
-    <div class="rad-text">All</div>
-  </label>
-  <label className="qt">(1200)</label></div>
-                {furniture.map((el, index) => (
-            <div className="dd">
-               <label class="rad-label">
-    <input type="radio" class="rad-input" name="rad"/>
-    <div class="rad-design"></div>
-    <div class="rad-text">{el.name}</div>
-  </label>
-  <label className="qt">(1200)</label>
-            </div>
-            ))}
-              
-          
+                <div className={showtype ? "soustype2" : "soustype22"}>
+                  <div className="dd">
+                    <label class="rad-label">
+                      <input type="radio" class="rad-input" name="rad" />
+                      <div class="rad-design"></div>
+                      <div class="rad-text">All</div>
+                    </label>
+                    <label className="qt">(1200)</label>
+                  </div>
+                  {furniture.map((el, index) => (
+                    <div className="dd">
+                      <label class="rad-label">
+                        <input type="radio" class="rad-input" name="rad" />
+                        <div class="rad-design"></div>
+                        <div class="rad-text">{el.name}</div>
+                      </label>
+                      <label className="qt">(1200)</label>
+                    </div>
+                  ))}
                 </div>
-               
               </div>
               <button>Update search</button>
             </div>
@@ -309,7 +328,7 @@ useEffect(() => {
               </main>
             </div>
             <div className="sousd22">
-            {/* <Cardproduct/>
+              {/* <Cardproduct/>
             <Cardproduct/>
             <Cardproduct/>
             <Cardproduct/>
@@ -317,36 +336,69 @@ useEffect(() => {
             <Cardproduct/>
             <Cardproduct/>
             <Cardproduct/> */}
-{
-            shop?.map((el,i) => <Cardproduct name={el.Product_name} Descri={el.Description} Product_img={el.Product_img} price={el.Price} setPing={setPing} ping={ping} el={el}/>)
-
-}
-
-
+              {shop?.map((el, i) => (
+                <Cardproduct
+                  name={el.Product_name}
+                  Descri={el.Description}
+                  Product_img={el.Product_img}
+                  price={el.Price}
+                  setPing={setPing}
+                  ping={ping}
+                  el={el}
+                />
+              ))}
             </div>
             <div className="sousd222">
-              <div className="div1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-  <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-</svg></div>
+              <div className="div1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-chevron-double-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
               <div className="div2">
                 <div className="cir c1">1</div>
                 <div className="cir">2</div>
                 <div className="cir">3</div>
                 <div className="cir">4</div>
                 <div className="cir">5</div>
-
               </div>
-              <div className="div1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-</svg></div>
-
+              <div className="div1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-chevron-double-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
