@@ -1,111 +1,312 @@
-body{
-   
+/* importtion  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(241, 238, 238);
 }
-.contact{
-   width: 100%;
-   height: 630px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+.contact .souscontact1 {
+  width: 100%;
+  height: 350px;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+     background-image: url("../../public/cov.jpg");
+background-position: center;
+background-size: cover;
 }
-.contact .sous-contact{
-    width: 60%;
-    height: 500px;
-    background-color: white;
-    margin-top: 65px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+.contact .souscontact1 img {
+  width: 100%;
+  margin-top: -300px;
+
 }
-.contact .sous-contact .div1{
-    width:350px;
-    height: 420px;
-    background-color:#137BC3;
+
+.contact .souscontact1 .contblack {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.376);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-soustiltle {
+  width: 100%;
+  text-align: center;
+}
+
+.contact .souscontact1 .contblack h1 {
+  color: white;
+  font-size: 45px;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.contact .souscontact1 .contblack p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.contact .souscontact1 .contblack p span {
+  color: #eb9d0c;
+}
+.contact .soucont{
+    width: 100%;
+    height: 850px;
+    background-color: #ebaf0c;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* top: -200px; */
+  z-index: -1;
+  }
+  .contact .soucont img{
+    width: 100%;
+  }
+  /* ------contact-content------- */
+  .contact-content{
+    width: 75%;
+    height: max-content;
+    /* background-color: red; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 20px;
+  }
+  /* --------------contact-map---------------------- */
+
+  .contact-content .contact-map{
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    
+  }
+  /* --------------end contact-map---------------------- */
+
+  /* --------------contact-postion---------------------- */
+  .contact-content .contact-postion {
+    width: 100%;
+    height: 240px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .contact-postion .contact-pos-details{
+    width: 30%;
+    height: 90%;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+  }
+  .contact-postion .contact-pos-details .icon-title{
+    width: 100%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center ;
-  left: 0;
-   margin-left: 200px;
-   box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 15px 10px;
+    align-items: center;
+    /* background-color: rgb(155, 88, 88); */
+  }
+ .contact-pos-details .icon-title h3{
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.594);
+  }
+  .contact-pos-details .icon-title svg{
+ color: #eb9d0c;
+ width:50px; 
+ height:50px ;
+   }
+   .contact-location{
+   text-align: center;
+   }
+   .contact-location p{ 
+    margin: 2px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.407);
+
     }
-    .contact .sous-contact .div1 h2{
-        color: white;
-        width: 300px;
-        text-align: left;
-        margin-bottom: 20px;
-        }
-        .contact .sous-contact .div1 div{
-       width: 300px;
-       height: 50px;
-       font-size: 15px;
-       margin-bottom: 20px;
-       font-weight: 400;
-       display: flex;
-       text-align: left;
-       justify-content: flex-start;
-       align-items: center;
-       color: white;
-       
-            }
-            .contact .sous-contact .div1 div svg{
-              margin-right: 10px;
-                     }
-.contact .sous-contact .div2{
-width:400px;
-height: 450px;
+  /* --------------end contact-postion---------------------- */
 
-margin-right: 50px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
 
+  /* -------------- contact-email---------------------- */
+  .contact-content .contact-send-email{
+    width: 100%;
+    height: max-content;
+    background-color: rgba(9, 9, 9, 0.811);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
 }
-.contact .sous-contact .div2 h2{
-    color: hsl(205, 82%, 42%);
-    width: 350px;
-    text-align: left;
-    }
-    .contact .sous-contact .div2 p{
-        color: gray;
-        width: 350px;
-        text-align: left;
-margin-top: -15px;
-margin-bottom: 20px;
-        }
-        .contact .sous-contact .div2 input{
-            background-color: rgba(211, 209, 209, 0.418);
-            width: 320px;
-           height: 40px;
-           border: none;
-           border-radius: 8px;
-          padding-left: 30px;
+.contact-send-email h2{
+   font-size: 30px;
+   margin: 10px;
+}
+.contact-send-email p{
+  width: 70%;
+  text-align: center;
+ }
+.contact-send-email .send-email-button{
+    margin-top: 20px;
+}
+.contact-send-email .send-email-button button{
+  background-color: transparent;
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact-send-email .send-email-button button:hover{
+    background-color: white;
+    color: #000000;
+   transition: 0.5s;
+  }
+
+  .contact-form {
+    width: 75%;
+    height: max-content;
+    margin: 10px 0;
+    opacity: 1; /* Start with opacity 0 */
+    transition: opacity 0.3s ease-out;
+    /* background-color: red; */
+  }
+  
+  .contact-form.active {
+    opacity: 0; /* Set opacity to 1 when the element has the 'active' class */
+  }
+  /* -------name and email input --------- */
+  .contact-form .name-email-inputs{
+display: flex;
+align-items: center;
+justify-content: start;
+gap: 20px;
+margin: 10px;
+
+  }
+  .contact-form .name-email-inputs input{
+    width: 48%;
+    height: 45px;
+    border-radius: 2px;
+    border: none;
+  padding-left: 2%;
+  }
+  .contact-form .name-email-inputs input:focus{
     outline: none;
-    margin-bottom: 15px;
-    
-            }
-            .contact .sous-contact .div2 textarea{
-                background-color: rgba(211, 209, 209, 0.418);
-                width: 320px;
-               height: 100px;
-               border: none;
-               border-radius: 8px;
-              padding-left: 30px;
-        outline: none;
-        margin-bottom: 15px;
-        
-                }
-                .contact .sous-contact .div2 .button{
-       background: linear-gradient(to right, #00FE90, #137BC3);  
-        width: 120px;
-                   height: 45px;
-                   border: none;
-                   border-radius: 50px;
-               font-size: 17px;
-               font-weight: 600;
-            margin-bottom: 15px;
-color: white;
-                    }
+}
+  /* -------subject and message input --------- */
+  .contact-form .subject-message{
+    margin: 10px;
+      }
+.contact-form .subject-message input{
+    width: 97.6%;
+    height: 45px;
+    border-radius: 2px;
+    border: none;
+    padding-left: 2%;
+
+  }
+  .contact-form .subject-message input:focus{
+    outline: none;
+
+  }
+
+.contact-form .subject-message textarea{
+    width: 98%;
+    height: 45px;
+    border-radius: 2px;
+    border: none;
+    margin: 10px 0;
+    height: 200px;
+    resize: none;
+    padding: 2%;
+    padding-right: 0;
+    font-size: 15px;
+
+  }
+  .contact-form .subject-message textarea:focus{
+  outline: none;
+
+  }
+
+  .confirm-send-email-button{
+    margin-top: 20px;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.confirm-send-email-button button{
+  background-color: transparent;
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.confirm-send-email-button button:hover{
+    background-color: white;
+    color: #000000;
+   transition: 0.5s;
+  }
+  /* -------------- end-contact-email---------------------- */
+
+  /* -------------- contact-other-d--------------------- */
+
+  .contact-content .contact-other-d{
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+ .contact-other-d .other-detail-div{
+  width: 30%;
+  height: 40%;
+  margin-left: 20px;
+  /* background-color: red; */
+  }
+  .contact-other-d .other-detail-div h5{
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.594);
+    }
+    .contact-other-d .other-detail-div p{
+        margin: 10px 0;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.594);
+        }
+  /* --------------end contact-other-d--------------------- */
+
+  
