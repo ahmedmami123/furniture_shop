@@ -189,15 +189,16 @@
 
 .contact-form {
   width: 75%;
-  height: max-content;
   margin: 10px 0;
   opacity: 1; /* Start with opacity 0 */
-  transition: opacity 0.3s ease-out;
-  /* background-color: red; */
+  transition: opacity 1s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
 }
 
-.contact-form.active {
-  opacity: 0; /* Set opacity to 1 when the element has the 'active' class */
+.contact-form.open {
+  max-height: 500px; /* Set an appropriate value based on your content */
 }
 /* -------name and email input --------- */
 .contact-form .name-email-inputs {
