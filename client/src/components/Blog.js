@@ -58,7 +58,14 @@ function Blog({ setnav, setpp, ping, setPing }) {
           <h2>INTERIOR TIPS & IDEAS</h2>
           <p>First Things First, Find Out What You Like</p>
         </div>
-        <BlogCard />
+        <div className="blog-content">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
       </div>
       <div className="divtr">
         <h1>Our Story</h1>
