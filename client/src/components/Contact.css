@@ -180,6 +180,7 @@
   font-size: 15px;
   border-radius: 5px;
   margin-bottom: 20px;
+  width: 175px;
 }
 .contact-send-email .send-email-button button:hover {
   background-color: white;
