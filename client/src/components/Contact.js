@@ -107,24 +107,24 @@ function Contact({ setnav, setpp }) {
             and scrambled it to make a type specimen book.
           </p>
           <div className="send-email-button">
-        <button onClick={toggleForm}>
-          {formIsOpen ? "Close form" : "Contact us via form"}
-        </button>
-      </div>
+            <button onClick={toggleForm}>
+              {formIsOpen ? "Close form" : "Contact us via form"}
+            </button>
+          </div>
 
-      <div className={`contact-form ${formIsOpen ? 'open' : ''}`}>
-        <div className="name-email-inputs">
-          <input type="text" placeholder="Your name" />
-          <input type="text" placeholder="email" />
-        </div>
-        <div className="subject-message">
-          <input type="text" placeholder="Subject" />
-          <textarea name="" id="" placeholder="Message"></textarea>
-        </div>
-        <div className="confirm-send-email-button">
-          <button>Send Message</button>
-        </div>
-      </div>
+          <div className={`contact-form ${formIsOpen ? "open" : ""}`}>
+            <div className="name-email-inputs">
+              <input type="text" placeholder="Your name" />
+              <input type="text" placeholder="email" />
+            </div>
+            <div className="subject-message">
+              <input type="text" placeholder="Subject" />
+              <textarea name="" id="" placeholder="Message"></textarea>
+            </div>
+            <div className="confirm-send-email-button">
+              <button>Send Message</button>
+            </div>
+          </div>
         </div>
         <div className="contact-other-d">
           <div className="other-detail-div">
