@@ -1,0 +1,96 @@
+.about .team .team_container .team_card {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 100;
+}
+.about .team .team_container .team_card .card_1 {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+.about .team .team_container .team_card .card_1 img {
+  width: 100%;
+}
+.about .team .team_container .team_card .shadow {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  transition: 0.5s;
+}
+
+.about .team .team_container .team_card .name {
+  width: 250px;
+  height: 80px;
+  background-color: #ffbb00;
+  position: absolute;
+  z-index: -10;
+  margin-top: -170px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .team .team_container .team_card .name h2 {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.about .team .team_container .team_card .name p {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 400;
+}
+.about .team .team_container .team_card .social {
+  width: 250px;
+  height: 60px;
+  background-color: #ffbb00;
+
+  position: absolute;
+  z-index: -10;
+  margin-top: 190px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .team .team_container .team_card .social .social_div {
+  width: 60%;
+  height: 60px;
+  background-color: #ffbb00;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .team .team_container .team_card .social .social_div svg {
+  fill: white;
+  transition: 0.5s;
+}
+.about .team .team_container .team_card .social .social_div svg:hover {
+  fill: #3a3d45;
+  transition: 0.5s;
+}
+.about .team .team_container .team_card:hover .name {
+  margin-top: -330px;
+  transition: 0.5s;
+}
+.about .team .team_container .team_card:hover .social {
+  margin-top: 300px;
+  transition: 0.5;
+}
+.about .team .team_container:hover .team_card .shadow {
+  background-color: #ffffff9f;
+  transition: 0.5s;
+}
+.about .team .team_container .team_card:hover .shadow {
+  background-color: #66666600;
+  transition: 0.5s;
+}
+

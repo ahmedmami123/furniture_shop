@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { useLocation, useNavigationType } from "react-router-dom";
 import BlogCard from "../cards/BlogCard";
 import BlogNewsCard from "../cards/BlogNewsCard";
+import TeamCard from "../cards/TeamCard";
 
 function About({ setnav, setpp, ping, setPing }) {
   //   const [activeSlide, setActiveSlide] = useState(0);
@@ -28,7 +29,7 @@ function About({ setnav, setpp, ping, setPing }) {
   return (
     <div className="about">
       <div className="souabout">
-        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <img src="https://c1.wallpaperflare.com/preview/735/113/159/chairs-contemporary-empty-indoors.jpg" />
       </div>
       <div className="souabout1">
         {/* <img src="cov.jpg" /> */}
@@ -63,53 +64,93 @@ function About({ setnav, setpp, ping, setPing }) {
           </p>
         </div>
         <div className="team_container">
-          <div className="team_card">
-            <div className="shadow"></div>
-            <div className="name"></div>
-            <div className="social"></div>
-            <div className="card_1">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="team_card">
-            <div className="shadow"></div>
-            <div className="name"></div>
-            <div className="social"></div>
-            <div className="card_1">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="team_card">
-            <div className="shadow"></div>
-            <div className="name"></div>
-            <div className="social"></div>
-            <div className="card_1">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="team_card">
-            <div className="shadow"></div>
-            <div className="name"></div>
-            <div className="social"></div>
-            <div className="card_1">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
-                alt=""
-              />
-            </div>
-          </div>
+          <TeamCard
+            img={
+              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+            }
+          />
+          <TeamCard
+            img={
+              "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+          />
+          <TeamCard
+            img={
+              "https://images.unsplash.com/photo-1605993439219-9d09d2020fa5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+          />
+          <TeamCard
+            img={
+              "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+            }
+          />
         </div>
         <div className="team_btn">
           <button>Contact us</button>
+        </div>
+      </div>
+      <div className="covback">
+        <h1>WE LOVE OUR WORK</h1>
+        <p>
+          Lorem ipsum folor sit amet, consenuer adispicing elit mast. Curarbitur
+          tristique lacinia mi, vitae consector oido efficitur nec. Phasellus
+          velit fe ermentum in enim. Lorem ipsum dolor sit amet, censectur
+          adispcing elit curabitur
+        </p>
+      </div>
+      <div className="Interios">
+        <div className="titre_int">
+          <h1>DESIGN OF INTERIORS</h1>
+          <p>Our services team produces interior design solutions</p>
+        </div>
+        <div className="Interios_grid">
+          <div class="box a">
+            <div className="box_cover">
+              <button>Interior design</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1392&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          {/* <div class="box b">B</div> */}
+          <div class="box c">
+            <div className="box_cover">
+              <button>Interior design</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1619596662481-085e45d69762?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="box d">
+            {" "}
+            <div className="box_cover">
+              <button>Interior design</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1496180727794-817822f65950?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="box e">
+            <div className="box_cover">
+              <button>Interior design</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1596456139864-120856dd9f21?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="box f">
+            <div className="box_cover">
+              <button>Interior design</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1563418536419-3a3ad6ef5efd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <Footer />

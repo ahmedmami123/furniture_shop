@@ -73,11 +73,16 @@
   position: fixed;
   /* top: -200px; */
   z-index: -1;
-  margin-top: -250px;
+  margin-top: -220px;
 }
 .about .souabout img {
   width: 100%;
 }
+
+/***************************************************************
+*************************************************************
+*************************************************************
+*/
 .about .team {
   width: 100%;
   height: auto;
@@ -115,73 +120,13 @@
   margin-bottom: 50px;
   align-items: center;
 }
-.about .team .team_container .team_card {
-  width: 250px;
-  height: 250px;
-  background-color: #0cebd5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  z-index: 100;
-}
-.about .team .team_container .team_card .card_1 {
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-}
-.about .team .team_container .team_card .card_1 img {
-  width: 100%;
-}
-.about .team .team_container .team_card .shadow {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  transition: 0.5s;
-}
-
-.about .team .team_container .team_card .name {
-  width: 250px;
-  height: 80px;
-  background-color: #ffbb00;
-  position: absolute;
-  z-index: -10;
-  margin-top: -170px;
-  transition: 0.5s;
-}
-.about .team .team_container .team_card .social {
-  width: 250px;
-  height: 60px;
-  background-color: #ffbb00;
-
-  position: absolute;
-  z-index: -10;
-  margin-top: 190px;
-  transition: 0.5s;
-}
-.about .team .team_container .team_card:hover .name {
-  margin-top: -330px;
-  transition: 0.5s;
-}
-.about .team .team_container .team_card:hover .social {
-  margin-top: 300px;
-  transition: 0.5;
-}
-.about .team .team_container:hover .team_card .shadow {
-  background-color: #ffffff9f;
-  transition: 0.5s;
-}
-.about .team .team_container .team_card:hover .shadow {
-  background-color: #66666600;
-  transition: 0.5s;
-}
 .about .team .team_btn {
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .about .team .team_btn button {
   width: 110px;
@@ -196,4 +141,169 @@
   background-color: #3a3d45;
   transition: 1s;
   color: white;
+}
+
+/*****************************************************************************
+*
+**
+*
+*
+*
+*******************************************************************************
+*/
+.about .covback {
+  width: 100%;
+  height: 430px;
+  background-color: rgba(0, 0, 0, 0.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.about .covback p {
+  width: 61%;
+  text-align: center;
+  font-size: 13.8px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+/*
+**************************************************************
+***************************************************************
+***************************************************************
+***************************************************************
+*/
+
+.about .Interios {
+  width: 100%;
+  height: auto;
+  line-height: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.about .Interios .titre_int {
+  margin-top: 80px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3a3d45;
+  margin-bottom: 50px;
+}
+.about .Interios .titre_int p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.about .Interios .Interios_grid {
+  width: 85%;
+  height: 750px;
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 30px;
+  color: #444;
+  margin-bottom: 80px !important;
+  justify-content: center;
+}
+
+.about .Interios .Interios_grid .box {
+  background-color: #444;
+  color: #fff;
+  height: 320px;
+  padding: 20px;
+  font-size: 150%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about .Interios .Interios_grid .box img {
+  width: 115%;
+  transition: 5s;
+}
+.about .Interios .Interios_grid .box .box_cover {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.115);
+  position: absolute;
+  padding: 20px;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .Interios .Interios_grid .box:hover .box_cover {
+  width: 100%;
+  height: 350px;
+  background-color: #eeb61ea9;
+  position: absolute;
+  padding: 20px;
+  transition: 1s;
+}
+.about .Interios .Interios_grid .box:hover img {
+  width: 150%;
+  transition: 5s;
+}
+.about .Interios .Interios_grid .box .box_cover button {
+  width: 130px;
+  height: 45px;
+  border-radius: 3px;
+  margin-top: 210px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: 1s;
+}
+.about .Interios .Interios_grid .box:hover .box_cover button {
+  transition: 1s;
+  margin-top: 0;
+}
+.about .Interios .Interios_grid .box .box_cover button:hover {
+  transition: 1s;
+
+  background-color: #ffffff;
+  color: #3a3d45;
+}
+.about .Interios .Interios_grid .a {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.about .Interios .Interios_grid .b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.about .Interios .Interios_grid .c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.about .Interios .Interios_grid .d {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.e {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.about .Interios .Interios_grid .f {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
