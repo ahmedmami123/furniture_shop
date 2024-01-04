@@ -137,6 +137,19 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
                 <p className={navpos ? `${pp} p p1` : `${pp} p`}>Home</p>
               </div>
             </Link>
+            <Link to="/about">
+              <div
+                className={showhome ? "active" : ""}
+                onClick={() => {
+                  setShowhome(true);
+                  setShowabout(false);
+                  setShowcontact(false);
+                  setShowidea(false);
+                }}
+              >
+                <p className={navpos ? `${pp} p p1` : `${pp} p`}>About</p>
+              </div>
+            </Link>
             <Link to="/blog">
               <div
                 className={showabout ? "active" : ""}

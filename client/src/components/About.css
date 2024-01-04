@@ -1,0 +1,309 @@
+/* importtion  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about .souabout1 {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../../public/cov.jpg"); */
+  background-position: center;
+  background-size: cover;
+}
+
+.about .souabout1 img {
+  width: 100%;
+  margin-top: -50px;
+}
+
+.about .souabout1 .trablack {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.349);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about-soustiltle {
+  width: 87%;
+}
+
+.about .souabout1 .trablack h1 {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.about .souabout1 .trablack p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about .souabout1 .trablack p span {
+  color: #eb9d0c;
+}
+
+/* blog story  */
+
+.about .souabout {
+  width: 100%;
+  height: 850px;
+  background-color: #ebaf0c;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  /* top: -200px; */
+  z-index: -1;
+  margin-top: -220px;
+}
+.about .souabout img {
+  width: 100%;
+}
+
+/***************************************************************
+*************************************************************
+*************************************************************
+*/
+.about .team {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .team .team_content {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .team .team_content h1 {
+  color: #666666;
+}
+.about .team .team_content p {
+  color: #666666;
+  width: 67%;
+  text-align: center;
+
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.about .team .team_container {
+  width: 82%;
+  height: 250px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.about .team .team_btn {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.about .team .team_btn button {
+  width: 110px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid #3a3d45;
+  background-color: white;
+  transition: 1s;
+}
+.about .team .team_btn button:hover {
+  background-color: #3a3d45;
+  transition: 1s;
+  color: white;
+}
+
+/*****************************************************************************
+*
+**
+*
+*
+*
+*******************************************************************************
+*/
+.about .covback {
+  width: 100%;
+  height: 430px;
+  background-color: rgba(0, 0, 0, 0.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.about .covback p {
+  width: 61%;
+  text-align: center;
+  font-size: 13.8px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+/*
+**************************************************************
+***************************************************************
+***************************************************************
+***************************************************************
+*/
+
+.about .Interios {
+  width: 100%;
+  height: auto;
+  line-height: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.about .Interios .titre_int {
+  margin-top: 80px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3a3d45;
+  margin-bottom: 50px;
+}
+.about .Interios .titre_int p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.about .Interios .Interios_grid {
+  width: 85%;
+  height: 750px;
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 30px;
+  color: #444;
+  margin-bottom: 80px !important;
+  justify-content: center;
+}
+
+.about .Interios .Interios_grid .box {
+  background-color: #444;
+  color: #fff;
+  height: 320px;
+  padding: 20px;
+  font-size: 150%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about .Interios .Interios_grid .box img {
+  width: 115%;
+  transition: 5s;
+}
+.about .Interios .Interios_grid .box .box_cover {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.115);
+  position: absolute;
+  padding: 20px;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .Interios .Interios_grid .box:hover .box_cover {
+  width: 100%;
+  height: 350px;
+  background-color: #eeb61ea9;
+  position: absolute;
+  padding: 20px;
+  transition: 1s;
+}
+.about .Interios .Interios_grid .box:hover img {
+  width: 150%;
+  transition: 5s;
+}
+.about .Interios .Interios_grid .box .box_cover button {
+  width: 130px;
+  height: 45px;
+  border-radius: 3px;
+  margin-top: 210px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: 1s;
+}
+.about .Interios .Interios_grid .box:hover .box_cover button {
+  transition: 1s;
+  margin-top: 0;
+}
+.about .Interios .Interios_grid .box .box_cover button:hover {
+  transition: 1s;
+
+  background-color: #ffffff;
+  color: #3a3d45;
+}
+.about .Interios .Interios_grid .a {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.about .Interios .Interios_grid .b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.about .Interios .Interios_grid .c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.about .Interios .Interios_grid .d {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.e {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.about .Interios .Interios_grid .f {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

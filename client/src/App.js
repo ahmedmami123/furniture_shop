@@ -21,6 +21,7 @@ import { getshop } from "./redux/shopSlice/shopSlice";
 import { getshopCard } from "./redux/shopingCard/shopingCardSlice";
 import Blog from "./components/Blog";
 import BlogDetails from "./components/BlogDetails";
+import About from "./components/About";
 function App() {
   const [ping, setPing] = useState(false);
   const [nav, setnav] = useState("");
@@ -95,6 +96,10 @@ function App() {
         <Route
           path="/contact"
           element={<Contact setnav={setnav} setpp={setpp} />}
+        />
+        <Route
+          path="/about"
+          element={<About setnav={setnav} setpp={setpp} />}
         />
         <Route path="/blog" element={<Blog setnav={setnav} setpp={setpp} />} />
         <Route path="/blogdetails" element={<BlogDetails  setnav={setnav} setpp={setpp}  />} />
