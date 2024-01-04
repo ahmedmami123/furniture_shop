@@ -53,7 +53,7 @@ function About({ setnav, setpp, ping, setPing }) {
         </div>
       </div>
       <div className="team">
-        <div className="content">
+        <div className="team_content">
           <h1>MEET OUR TEAM</h1>
           <p>
             Our architects and designers constantly and carefully monitor the
@@ -61,6 +61,55 @@ function About({ setnav, setpp, ping, setPing }) {
             architectural, as well as sociological, changes and transform them
             into unique design.
           </p>
+        </div>
+        <div className="team_container">
+          <div className="team_card">
+            <div className="shadow"></div>
+            <div className="name"></div>
+            <div className="social"></div>
+            <div className="card_1">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="team_card">
+            <div className="shadow"></div>
+            <div className="name"></div>
+            <div className="social"></div>
+            <div className="card_1">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="team_card">
+            <div className="shadow"></div>
+            <div className="name"></div>
+            <div className="social"></div>
+            <div className="card_1">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="team_card">
+            <div className="shadow"></div>
+            <div className="name"></div>
+            <div className="social"></div>
+            <div className="card_1">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="team_btn">
+          <button>Contact us</button>
         </div>
       </div>
       <Footer />
