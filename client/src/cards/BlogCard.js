@@ -1,6 +1,8 @@
 import React from "react";
 import "./blogCard.css";
+import { useNavigate } from "react-router-dom";
 const BlogCard = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="content">
@@ -20,7 +22,7 @@ const BlogCard = () => {
           </div>
         </div>
         <div className="show-button">
-          <button>Read more</button>
+          <button onClick={()=> navigate("/blogdetails")}>Read more</button>
         </div>
       </div>
     </>

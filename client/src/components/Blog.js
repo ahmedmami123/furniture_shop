@@ -59,7 +59,7 @@ function Blog({ setnav, setpp, ping, setPing }) {
           <p>First Things First, Find Out What You Like</p>
         </div>
         <div className="blog-content">
-          <BlogCard />
+          <BlogCard  />
           <BlogCard />
           <BlogCard />
           <BlogCard />
