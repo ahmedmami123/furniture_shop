@@ -25,6 +25,8 @@ import { getcommande_Admin } from "./redux/commandadminSlice/CommandeAdminSlice"
 import Commande_client from "./components/Commande_client";
 function App() {
   const [ping, setPing] = useState(false);
+  const [CommandePing, setCommandePing] = useState(false);
+
   const [nav, setnav] = useState("");
   const [pp, setpp] = useState("");
   const [navbardash, setnavbardash] = useState("");
@@ -49,6 +51,8 @@ function App() {
         navbardash={navbardash}
         ping={ping}
         setPing={setPing}
+        setCommandePing={setCommandePing}
+        CommandePing={CommandePing}
       />
 
       {/* <div className="nav-bar">

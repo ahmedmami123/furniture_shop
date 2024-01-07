@@ -24,7 +24,12 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [showshop, setShowshop] = useState(false);
 
   const user = useSelector((state) => state?.user?.user);
-  
+  const [prodTab, setProdTab] = useState({
+    product_id: "hghhh",
+    product_name: "fff",
+    qt: "",
+    price: "",
+  });
   //admin commande
   var user_ide = user?._id;
   console.log("ahmed", user_ide);
@@ -32,7 +37,9 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
     user_id: "",
     products: [],
   });
-
+  useEffect(() => {
+    setCommandeAdmin({ user_id: "", products: [] });
+  }, [!ping]);
   function addProducts() {
     var newProducts = [];
 
@@ -49,6 +56,20 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
           price: el?.Price,
         });
       }
+    }
+
+    setCommandeAdmin((prevState) => ({
+      ...prevState,
+      user_id: user_ide,
+      products: [...prevState.products, ...newProducts],
+    }));
+  }
+
+  function remove() {
+    for (let i = 0; i < shop.length; i++) {
+      const el = shop[i];
+      var shopcard2 = el.shoping.filter((el) => el === user?._id).length;
+
       setTimeout(() => {
         dispatch(
           updatecard({
@@ -58,12 +79,6 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
         );
       }, 1000);
     }
-
-    setCommandeAdmin((prevState) => ({
-      ...prevState,
-      user_id: user_ide,
-      products: [...prevState.products, ...newProducts],
-    }));
   }
 
   console.log(commandeAdmin, "helloooo");
@@ -172,7 +187,7 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
               <button
                 onClick={() => {
                   setTimeout(() => {
-                    addProducts();
+                    remove();
                   }, 1000);
                   setTimeout(() => {
                     dispatch(addcommande_Admin(commandeAdmin));
@@ -181,6 +196,17 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
 
                     setPing(!ping);
                   }, 2000);
+                }}
+              >
+                ggggggggggggggggg
+              </button>
+            </div>
+            <div className="d2">
+              <button
+                onClick={() => {
+                  setTimeout(() => {
+                    addProducts();
+                  }, 1000);
                 }}
               >
                 Buy now
