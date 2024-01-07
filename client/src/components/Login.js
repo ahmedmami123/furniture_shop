@@ -294,8 +294,8 @@ function Login({ setnav, setpp }) {
     //       </div>
     //     </div>
     <div className="Login_Register">
-      <div className="ImageCoverContent">
-        {/* <img src="cov.jpg" /> */}
+      {/* <div className="ImageCoverContent">
+        
         <img src="https://images6.alphacoders.com/125/1257448.jpg" />
         <div className="trablack">
           <div className="Login_Register-soustiltle">
@@ -315,7 +315,7 @@ function Login({ setnav, setpp }) {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={!validat ? "all_content" : "all_content2"}>
         <div className={!validat ? "register" : "register pos"}>
           <div className="titre">
