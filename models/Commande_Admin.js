@@ -1,11 +1,14 @@
 const mongoose = require("mongoose");
 const Commande_AdminSchema = new mongoose.Schema({
   user_id: String,
+
   validate: {
     type: Boolean,
     default: false,
   },
   date: {
+    user_id: String,
+
     type: Date,
     default: Date.now,
   },
@@ -15,7 +18,7 @@ const Commande_AdminSchema = new mongoose.Schema({
         product_id: String,
         product_name: String,
         qt: Number,
-        price: Number,
+        price: String,
       },
     ],
     default: [],

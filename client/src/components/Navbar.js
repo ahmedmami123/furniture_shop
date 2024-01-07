@@ -14,6 +14,7 @@ import Favcard from "./Favcard";
 import "./Navbar.css";
 import ShopCard from "./ShopCard";
 import { addcommande_Admin } from "../redux/commandadminSlice/CommandeAdminSlice";
+import { updatecard } from "../redux/shopSlice/shopSlice";
 
 function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [show0, setShow0] = useState(false);
@@ -21,18 +22,50 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [navpos, setNavpos] = useState(false);
   const [showfav, setShowfav] = useState(false);
   const [showshop, setShowshop] = useState(false);
+
   const user = useSelector((state) => state?.user?.user);
-  const [prodTab, setProdTab] = useState({
-    product_id: "hghhh",
-    product_name: "fff",
-    qt: "",
-    price: "",
-  });
+  
   //admin commande
+  var user_ide = user?._id;
+  console.log("ahmed", user_ide);
   const [commandeAdmin, setCommandeAdmin] = useState({
-    user_id: user?._id,
-    products: [prodTab],
+    user_id: "",
+    products: [],
   });
+
+  function addProducts() {
+    var newProducts = [];
+
+    for (let i = 0; i < shop.length; i++) {
+      const el = shop[i];
+      var shopcard2 = el.shoping.filter((el) => el === user?._id).length;
+
+      if (el?.shoping.includes(user?._id)) {
+        newProducts.push({
+          // user_id: user_ide,
+          product_id: el?._id,
+          product_name: el?.Product_name,
+          qt: shopcard2,
+          price: el?.Price,
+        });
+      }
+      setTimeout(() => {
+        dispatch(
+          updatecard({
+            id: el._id,
+            shops: el.shoping.filter((el) => el != user._id),
+          })
+        );
+      }, 1000);
+    }
+
+    setCommandeAdmin((prevState) => ({
+      ...prevState,
+      user_id: user_ide,
+      products: [...prevState.products, ...newProducts],
+    }));
+  }
+
   console.log(commandeAdmin, "helloooo");
 
   const notif = useSelector(
@@ -120,6 +153,16 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
               />
             ))}
           </div>
+          {/* {shop.filter((el) => el?.shoping.includes(user?._id)).map((el,i)=>(
+                <ShopCard
+                el={el}
+                setPing={setPing}
+                ping={ping}
+                s={s}
+                setCommandeAdmin={setCommandeAdmin}
+                commandeAdmin={commandeAdmin}
+              />
+            ))} */}
           <div className="shopcard2">
             <div className="d1">
               <span>Total :</span>
@@ -128,7 +171,16 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
             <div className="d2">
               <button
                 onClick={() => {
-                  dispatch(addcommande_Admin(commandeAdmin));
+                  setTimeout(() => {
+                    addProducts();
+                  }, 1000);
+                  setTimeout(() => {
+                    dispatch(addcommande_Admin(commandeAdmin));
+                    setShowshop(!showshop);
+                    navigate("/commande_client");
+
+                    setPing(!ping);
+                  }, 2000);
                 }}
               >
                 Buy now

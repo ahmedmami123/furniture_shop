@@ -22,6 +22,7 @@ import Blog from "./components/Blog";
 import About from "./components/About";
 import BlogDetails from "./components/BlogDetails";
 import { getcommande_Admin } from "./redux/commandadminSlice/CommandeAdminSlice";
+import Commande_client from "./components/Commande_client";
 function App() {
   const [ping, setPing] = useState(false);
   const [nav, setnav] = useState("");
@@ -121,6 +122,17 @@ function App() {
           path="/shop"
           element={
             <Shop setnav={setnav} setpp={setpp} ping={ping} setPing={setPing} />
+          }
+        />
+        <Route
+          path="/commande_client"
+          element={
+            <Commande_client
+              setnav={setnav}
+              setpp={setpp}
+              ping={ping}
+              setPing={setPing}
+            />
           }
         />
       </Routes>
