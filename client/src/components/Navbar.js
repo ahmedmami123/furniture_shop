@@ -22,22 +22,18 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [showfav, setShowfav] = useState(false);
   const [showshop, setShowshop] = useState(false);
   const user = useSelector((state) => state?.user?.user);
-const [prodTab, setProdTab] = useState(
-  {
-      product_id:"hghhh",
-      product_name:"fff",
-      qt:"",
-      price:""   
-  }
-)
-//admin commande
+  const [prodTab, setProdTab] = useState({
+    product_id: "hghhh",
+    product_name: "fff",
+    qt: "",
+    price: "",
+  });
+  //admin commande
   const [commandeAdmin, setCommandeAdmin] = useState({
-    user_id:user?._id,
-    products:[
-      prodTab
-    ]
-  })
-console.log(commandeAdmin,"helloooo")
+    user_id: user?._id,
+    products: [prodTab],
+  });
+  console.log(commandeAdmin, "helloooo");
 
   const notif = useSelector(
     (state) => state?.usernotification?.Usernotifications
@@ -114,7 +110,14 @@ console.log(commandeAdmin,"helloooo")
         <div className={showshop ? "shopcard0" : "shopcard"}>
           <div className="shopcard1">
             {shop?.map((el, i) => (
-              <ShopCard el={el} setPing={setPing} ping={ping} s={s} setCommandeAdmin={setCommandeAdmin} commandeAdmin={commandeAdmin} />
+              <ShopCard
+                el={el}
+                setPing={setPing}
+                ping={ping}
+                s={s}
+                setCommandeAdmin={setCommandeAdmin}
+                commandeAdmin={commandeAdmin}
+              />
             ))}
           </div>
           <div className="shopcard2">
@@ -123,13 +126,13 @@ console.log(commandeAdmin,"helloooo")
               <span>$ {sum(shop)}</span>
             </div>
             <div className="d2">
-              <button onClick={()=>{
-                dispatch(
-                  addcommande_Admin({
-                    commandeAdmin
-                  })
-                )
-              }}>Buy now</button>
+              <button
+                onClick={() => {
+                  dispatch(addcommande_Admin(commandeAdmin));
+                }}
+              >
+                Buy now
+              </button>
             </div>
           </div>
         </div>
