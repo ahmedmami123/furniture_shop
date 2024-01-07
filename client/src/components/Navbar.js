@@ -14,7 +14,7 @@ import Favcard from "./Favcard";
 import "./Navbar.css";
 import ShopCard from "./ShopCard";
 import { addcommande_Admin } from "../redux/commandadminSlice/CommandeAdminSlice";
-import { updatecard } from "../redux/shopSlice/shopSlice";
+import { getshop, updatecard } from "../redux/shopSlice/shopSlice";
 
 function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [show0, setShow0] = useState(false);
@@ -30,6 +30,7 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
     qt: "",
     price: "",
   });
+
   //admin commande
   var user_ide = user?._id;
   console.log("ahmed", user_ide);
@@ -186,16 +187,14 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
             <div className="d2">
               <button
                 onClick={() => {
-                  setTimeout(() => {
-                    remove();
-                  }, 1000);
+                  remove();
+
                   setTimeout(() => {
                     dispatch(addcommande_Admin(commandeAdmin));
+                    setPing(!ping);
                     setShowshop(!showshop);
                     navigate("/commande_client");
-
-                    setPing(!ping);
-                  }, 2000);
+                  }, 1000);
                 }}
               >
                 ggggggggggggggggg
@@ -206,6 +205,7 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
                 onClick={() => {
                   setTimeout(() => {
                     addProducts();
+                    setShowshop(!showshop);
                   }, 1000);
                 }}
               >

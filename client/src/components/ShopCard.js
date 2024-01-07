@@ -98,11 +98,11 @@ function ShopCard({
                           shops: el.shoping.filter((v, i) => i !== 0),
                         })
                       );
-                    }, 50);
+                    }, 1000);
 
                     setTimeout(() => {
                       setPing(!ping);
-                    }, 100);
+                    }, 1000);
 
                     setTimeout(() => {}, 1000);
                   }}
