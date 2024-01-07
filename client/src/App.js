@@ -18,10 +18,10 @@ import { getusernotification } from "./redux/UserNotificationSlice/UserNotificat
 import { set } from "mongoose";
 import Shop from "./components/Shop";
 import { getshop } from "./redux/shopSlice/shopSlice";
-import { getshopCard } from "./redux/shopingCard/shopingCardSlice";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import BlogDetails from "./components/BlogDetails";
+import { getcommande_Admin } from "./redux/commandadminSlice/CommandeAdminSlice";
 function App() {
   const [ping, setPing] = useState(false);
   const [nav, setnav] = useState("");
@@ -37,7 +37,7 @@ function App() {
     dispatch(getnotification());
     dispatch(getusernotification());
     dispatch(getshop());
-    dispatch(getshopCard());
+    dispatch(getcommande_Admin());
   }, [ping]);
 
   return (

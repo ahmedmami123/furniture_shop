@@ -13,10 +13,7 @@ import Favcard from "./Favcard";
 
 import "./Navbar.css";
 import ShopCard from "./ShopCard";
-import {
-  addshopCard,
-  updataddcard,
-} from "../redux/shopingCard/shopingCardSlice";
+
 function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [show0, setShow0] = useState(false);
   const [show, setShow] = useState(false);
