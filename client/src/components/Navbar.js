@@ -13,6 +13,7 @@ import Favcard from "./Favcard";
 
 import "./Navbar.css";
 import ShopCard from "./ShopCard";
+import { addcommande_Admin } from "../redux/commandadminSlice/CommandeAdminSlice";
 
 function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [show0, setShow0] = useState(false);
@@ -20,8 +21,24 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [navpos, setNavpos] = useState(false);
   const [showfav, setShowfav] = useState(false);
   const [showshop, setShowshop] = useState(false);
-
   const user = useSelector((state) => state?.user?.user);
+const [prodTab, setProdTab] = useState(
+  {
+      product_id:"hghhh",
+      product_name:"fff",
+      qt:"",
+      price:""   
+  }
+)
+//admin commande
+  const [commandeAdmin, setCommandeAdmin] = useState({
+    user_id:user?._id,
+    products:[
+      prodTab
+    ]
+  })
+console.log(commandeAdmin,"helloooo")
+
   const notif = useSelector(
     (state) => state?.usernotification?.Usernotifications
   );
@@ -97,7 +114,7 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
         <div className={showshop ? "shopcard0" : "shopcard"}>
           <div className="shopcard1">
             {shop?.map((el, i) => (
-              <ShopCard el={el} setPing={setPing} ping={ping} s={s} />
+              <ShopCard el={el} setPing={setPing} ping={ping} s={s} setCommandeAdmin={setCommandeAdmin} commandeAdmin={commandeAdmin} />
             ))}
           </div>
           <div className="shopcard2">
@@ -106,7 +123,13 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
               <span>$ {sum(shop)}</span>
             </div>
             <div className="d2">
-              <button>Buy now</button>
+              <button onClick={()=>{
+                dispatch(
+                  addcommande_Admin({
+                    commandeAdmin
+                  })
+                )
+              }}>Buy now</button>
             </div>
           </div>
         </div>

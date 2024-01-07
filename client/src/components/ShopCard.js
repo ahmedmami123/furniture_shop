@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updatecard } from "../redux/shopSlice/shopSlice";
 import "./Fav.css";
 
-function ShopCard({ el, ping, setPing, tot, settot }) {
+function ShopCard({ el, ping, setPing, tot, settot,setCommandeAdmin,commandeAdmin }) {
   const dispatch = useDispatch();
 
   const user = useSelector((state) => state.user?.user);
