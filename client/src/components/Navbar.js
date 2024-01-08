@@ -15,6 +15,7 @@ import "./Navbar.css";
 import ShopCard from "./ShopCard";
 import { addcommande_Admin } from "../redux/commandadminSlice/CommandeAdminSlice";
 import { getshop, updatecard } from "../redux/shopSlice/shopSlice";
+import ValiderCommande_client from "./ValiderCommande_client";
 
 function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [show0, setShow0] = useState(false);
@@ -22,14 +23,8 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   const [navpos, setNavpos] = useState(false);
   const [showfav, setShowfav] = useState(false);
   const [showshop, setShowshop] = useState(false);
-
+  const [showValiderCom, setshowValiderCom] = useState(false);
   const user = useSelector((state) => state?.user?.user);
-  const [prodTab, setProdTab] = useState({
-    product_id: "hghhh",
-    product_name: "fff",
-    qt: "",
-    price: "",
-  });
 
   //admin commande
   var user_ide = user?._id;
@@ -64,22 +59,6 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
       user_id: user_ide,
       products: [...prevState.products, ...newProducts],
     }));
-  }
-
-  function remove() {
-    for (let i = 0; i < shop.length; i++) {
-      const el = shop[i];
-      var shopcard2 = el.shoping.filter((el) => el === user?._id).length;
-
-      setTimeout(() => {
-        dispatch(
-          updatecard({
-            id: el._id,
-            shops: el.shoping.filter((el) => el != user._id),
-          })
-        );
-      }, 1000);
-    }
   }
 
   console.log(commandeAdmin, "helloooo");
@@ -184,7 +163,7 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
               <span>Total :</span>
               <span>$ {sum(shop)}</span>
             </div>
-            <div className="d2">
+            {/* <div className="d2">
               <button
                 onClick={() => {
                   remove();
@@ -199,13 +178,14 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
               >
                 ggggggggggggggggg
               </button>
-            </div>
+            </div> */}
             <div className="d2">
               <button
                 onClick={() => {
                   setTimeout(() => {
                     addProducts();
                     setShowshop(!showshop);
+                    setshowValiderCom(true);
                   }, 1000);
                 }}
               >
@@ -214,6 +194,13 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
             </div>
           </div>
         </div>
+        {showValiderCom && (
+          <ValiderCommande_client
+            setshowValiderCom={setshowValiderCom}
+            commandeAdmin={commandeAdmin}
+            setCommandeAdmin={setCommandeAdmin}
+          />
+        )}
 
         <section>
           <div className="sous-nav">
@@ -224,6 +211,7 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
               <p className="p2">FURNITURE FACTORY</p>
             </main>
           </div>
+
           <div className="sous-nav2">
             <Link to="/">
               <div

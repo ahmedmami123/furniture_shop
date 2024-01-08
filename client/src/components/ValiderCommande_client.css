@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.ValiderCommande {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.221);
+  position: fixed;
+  margin-bottom: 0;
+  top: 0;
+  z-index: 999999999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ValiderCommande .modalValid {
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  z-index: 999999999;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.ValiderCommande .modalValid .productsValid {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.ValiderCommande .modalValid .productsValid:hover {
+  cursor: all-scroll;
+}
+.ValiderCommande .modalValid .FormValid {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-left: 1px solid #eb9d0c;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ValiderCommande .modalValid .FormValid p {
+  color: #eb9d0c;
+  font-size: 25px;
+}
+.ValiderCommande .modalValid .FormValid .input-label {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 10px;
+}
+.ValiderCommande .modalValid .FormValid .input-label label {
+  margin-bottom: 10px;
+  color: gray;
+  font-size: 20px;
+}
+.ValiderCommande .modalValid .FormValid .input-label input {
+  height: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  outline: none;
+}
+
+.ValiderCommande .modalValid .FormValid .buton_valid {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-bottom: 10px;
+}
+.ValiderCommande .modalValid .FormValid .buton_valid button {
+  background-color: #eb9d0c;
+  border: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 10px;
+  transition: 1s;
+  color: white;
+  margin-left: 10px;
+}
+.ValiderCommande .modalValid .FormValid .buton_valid button:hover {
+  background-color: #3a3d45;
+  transition: 1s;
+}
