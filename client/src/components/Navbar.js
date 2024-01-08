@@ -199,6 +199,8 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
             setshowValiderCom={setshowValiderCom}
             commandeAdmin={commandeAdmin}
             setCommandeAdmin={setCommandeAdmin}
+            setPing={setPing}
+            ping={ping}
           />
         )}
 

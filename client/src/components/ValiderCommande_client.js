@@ -74,7 +74,7 @@ const ValiderCommande_client = ({
             <button
               onClick={() => {
                 setshowValiderCom(false);
-                ping1(!ping1);
+                setPing(!ping);
               }}
             >
               Cancel{" "}
