@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./About.css";
+import "./Commande_client.css";
 import Footer from "./Footer";
 import { useSelector } from "react-redux";
 import { useLocation, useNavigationType } from "react-router-dom";
@@ -8,10 +8,16 @@ import BlogNewsCard from "../cards/BlogNewsCard";
 import TeamCard from "../cards/TeamCard";
 
 function Commande_client({ setnav, setpp, ping, setPing }) {
+  const isAuth = localStorage.getItem("token");
+  const user = useSelector((state) => state?.user?.user);
+
   //   const [activeSlide, setActiveSlide] = useState(0);
   //   const [showprice, setshowprice] = useState(true);
   //   const [showtype, setshowtype] = useState(true);
-  const blog = useSelector((state) => state?.blog?.blogp);
+  const commande_Admin = useSelector(
+    (state) => state?.commandeAdmin?.commande_Admin
+  );
+  console.log("commande_Admin", commande_Admin);
   useEffect(() => {
     setnav("");
     setpp("");
@@ -27,11 +33,8 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
     }
   }, [location]);
   return (
-    <div className="about">
-      <div className="souabout">
-        <img src="https://c1.wallpaperflare.com/preview/735/113/159/chairs-contemporary-empty-indoors.jpg" />
-      </div>
-      <div className="souabout1">
+    <div className="commandeClient">
+      <div className="soucommandeClient1">
         {/* <img src="cov.jpg" /> */}
         <img src="https://images.unsplash.com/photo-1432249339392-2f754cb22105?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
         <div className="trablack">
@@ -53,7 +56,26 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
           </div>
         </div>
       </div>
+      <div className="imprimerCommande">
+        {commande_Admin?.filter((el) => el?.user_id === user?._id)
+          .map((el) => (
+            <div style={{ border: "1px solid black", marginTop: "20px" }}>
+              <p>{el.user_id}</p>
+              <p>{el.address}</p>
+              <p>{el.phone}</p>
 
+              {el.products?.map((ob) => (
+                <div style={{ backgroundColor: "red" }}>
+                  <p>{ob.product_name}</p>
+                  <p>{ob.product_id}</p>
+                  <p>{ob.qt}</p>
+                  <p>{ob.price}</p>
+                </div>
+              ))}
+              <p></p>
+            </div>
+          ))}
+      </div>
       <Footer />
     </div>
   );

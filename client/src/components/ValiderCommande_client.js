@@ -50,11 +50,23 @@ const ValiderCommande_client = ({
           <p>Ready to proceed? Confirm your order to complete the purchase!</p>
           <div className="input-label">
             <label>Adress</label>
-            <input type="text" placeholder="enter your address" />
+            <input
+              type="text"
+              placeholder="Enter your address"
+              onChange={(e) =>
+                setCommandeAdmin({ ...commandeAdmin, address: e.target.value })
+              }
+            />
           </div>
           <div className="input-label">
             <label>Phone</label>
-            <input type="text" placeholder="Enter your phone number" />
+            <input
+              type="text"
+              placeholder="Enter your phone number"
+              onChange={(e) =>
+                setCommandeAdmin({ ...commandeAdmin, phone: e.target.value })
+              }
+            />
           </div>
           <div className="buton_valid ">
             <button
@@ -64,6 +76,7 @@ const ValiderCommande_client = ({
                 setTimeout(() => {
                   dispatch(addcommande_Admin(commandeAdmin));
                   setPing(!ping);
+                  setshowValiderCom(false);
 
                   navigate("/commande_client");
                 }, 1000);

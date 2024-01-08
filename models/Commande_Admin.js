@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Commande_AdminSchema = new mongoose.Schema({
   user_id: String,
+  address: String,
+  phone: Number,
 
   validate: {
     type: Boolean,

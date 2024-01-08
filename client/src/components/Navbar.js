@@ -31,6 +31,8 @@ function Navbar({ navStyle, pp, navbardash, ping, setPing }) {
   console.log("ahmed", user_ide);
   const [commandeAdmin, setCommandeAdmin] = useState({
     user_id: "",
+    address: "",
+    phone: 0,
     products: [],
   });
   useEffect(() => {
