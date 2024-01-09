@@ -56,7 +56,83 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
           </div>
         </div>
       </div>
-      <div className="imprimerCommande">
+      <div className="imprimer-container">
+        <div className="imprHeader">
+          <div className="blackcg-imprHeader"></div>
+          <div className="imprm-logo">
+            <img src="sofa.png"></img>
+              <div className="imp-logo-title">
+              <span className="imp-p1">MOBEL</span>
+              <span className="imp2-p2">FURNITURE FACTORY</span>
+              </div>
+         
+
+          </div>
+          </div>
+          <div className="impr-info-paiment">
+         
+
+            <div className="impr-info-div">
+              <h3>INVOICE TO</h3>
+              <h2>Jhone Doe.</h2>
+              {/* <p>Managing Directer</p> */}
+              <div className="impr-p-details">
+              <p>Phone: +123 4568 777</p>
+              <p>Email: hazemfarhati@gmail.com</p>
+              <p>Address: Your address line here</p>
+              </div>
+              
+
+            </div>
+            <div className="impr-info-div">
+              <h3>Paiment Method</h3>
+              {/* <p>Managing Directer</p> */}
+              <div className="impr-p-details">
+              <p>Account no: +123 4568 777</p>
+              <p>Account Name: HAZEM FARHATI</p>
+              <p>Branche Name: XYZ</p>
+              </div>
+            </div>
+          </div>
+       
+       <div className="impr-table-container">
+       <div className="impr-table-details">
+
+        <div className="imp-table-title">
+          <div className="first-title">
+            <h5>NO</h5>
+            <h5 className="imp-item-name">ITEM DESCRIPTION</h5>
+            <h5>PRICE</h5>
+            <h5>QTY</h5>
+            <h5>TOTALE</h5>
+        </div></div>
+        <div className="imp-table-first-content">
+
+</div>
+<div className="imp-table-second-content">
+
+</div>
+        </div>
+       </div>
+       <div className="impt-terms-condition">
+       <div className="impt-terms-condition-content">
+       <h3>Terms & Conditions:</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p> Sed rem quas eos qui, blanditiis deserunt praesentium</p>
+        <div className="thank-you-imp">
+        <h3>Thank you for ur busniess with us</h3>
+      </div>
+       </div>
+       <div className="imp-totale-btn">
+        <span>Totale :</span>
+        <span>444 dt</span>
+       
+       </div>
+     
+             </div>
+           
+      </div>
+      {/* <div className="imprimerCommande">
       {commande_Admin
   ?.filter((el) => el?.user_id === user?._id)
   .slice(-1) // Get only the last element
@@ -78,7 +154,7 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
     </div>
   ))}
 
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
