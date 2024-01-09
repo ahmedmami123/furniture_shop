@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Commande_client.css";
 import Footer from "./Footer";
 import { useSelector } from "react-redux";
@@ -34,6 +34,10 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
       });
     }
   }, [location]);
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="commandeClient">
       <div className="soucommandeClient1">
@@ -58,11 +62,12 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
           </div>
         </div>
       </div>
+      <button onClick={() => handlePrint()}>Print</button>
       {commande_Admin
         ?.filter((el) => el?.user_id === user?._id)
         .slice(-1) // Get only the last element
         .map((el) => (
-          <div className="imprimer-container">
+          <div className="imprimer-container" id="printableContent">
             <div className="imprHeader">
               <div className="blackcg-imprHeader"></div>
               <div className="imprm-logo">
@@ -96,7 +101,7 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
                       {/* <p>Managing Directer</p> */}
                       <div className="impr-p-details">
                         <p>Account no: +123 4568 777</p>
-                        <p>Account Name: HAZEM FARHATI</p>
+                        <p>Account Name: {ob.name} {ob.Lastname}</p>
                         <p>Branche Name: XYZ</p>
                       </div>
                     </div>
