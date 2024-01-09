@@ -57,27 +57,26 @@ function Commande_client({ setnav, setpp, ping, setPing }) {
         </div>
       </div>
       <div className="imprimerCommande">
-      {commande_Admin
-  ?.filter((el) => el?.user_id === user?._id)
-  .slice(-1) // Get only the last element
-  .map((el) => (
-    <div style={{ border: "1px solid black", marginTop: "20px" }}>
-      <p>{el.user_id}</p>
-      <p>{el.address}</p>
-      <p>{el.phone}</p>
+        {commande_Admin
+          ?.filter((el) => el?.user_id === user?._id)
+          .slice(-1) // Get only the last element
+          .map((el) => (
+            <div style={{ border: "1px solid black", marginTop: "20px" }}>
+              <p>{el.user_id}</p>
+              <p>{el.address}</p>
+              <p>{el.phone}</p>
 
-      {el.products?.map((ob) => (
-        <div style={{ backgroundColor: "red" }} key={ob.product_id}>
-          <p>{ob.product_name}</p>
-          <p>{ob.product_id}</p>
-          <p>{ob.qt}</p>
-          <p>{ob.price}</p>
-        </div>
-      ))}
-      <p></p>
-    </div>
-  ))}
-
+              {el.products?.map((ob) => (
+                <div style={{ backgroundColor: "red" }} key={ob.product_id}>
+                  <p>{ob.product_name}</p>
+                  <p>{ob.product_id}</p>
+                  <p>{ob.qt}</p>
+                  <p>{ob.price}</p>
+                </div>
+              ))}
+              <p></p>
+            </div>
+          ))}
       </div>
       <Footer />
     </div>
